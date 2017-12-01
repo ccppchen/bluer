@@ -1,0 +1,42 @@
+[
+  {
+    "title": "JS Components",
+    "list": [
+      {
+        "path": "/actionsheet",
+        "name": "Action sheet",
+        "icon": "action-sheet"
+      },
+      {
+        "path": "/popup",
+        "name": "popup",
+        "icon": "popup"
+      }
+    ]
+  },
+  {
+    "title": "CSS Components",
+    "list": [
+      {
+        "path": "/cell",
+        "name": "Cell",
+        "icon": "cell"
+      },
+      {
+        "path": "/button",
+        "name": "Button",
+        "icon": "button"
+      }
+    ]
+  },
+  {
+    "title": "Form Components",
+    "list": [
+      {
+        "path": "/switch",
+        "name": "Switch",
+        "icon": "switch"
+      }
+    ]
+  }
+]
