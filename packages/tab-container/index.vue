@@ -9,7 +9,6 @@
     class="bl-tab-container">
     <div
       ref="wrap"
-      :class="{ 'swipe-transition': swipeLeave }"
       class="bl-tab-container-wrap">
       <slot></slot>
     </div>
