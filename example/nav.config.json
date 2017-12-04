@@ -31,6 +31,11 @@
         "path": "/toast",
         "name": "toast",
         "icon": "toast"
+      },
+      {
+        "path": "/slide",
+        "name": "slide",
+        "icon": "slide"
       }
     ]
   },

@@ -9,6 +9,7 @@ import Toast from '../packages/toast';
 import Popup from '../packages/popup';
 import Picker from '../packages/picker';
 import Switch from '../packages/switch';
+import Slide from '../packages/slide';
 import directive from './directive';
 import ModalJs from '../packages/modal/modal.js';
 import Toast from '../packages/toast/toast.js';
@@ -35,6 +36,7 @@ const install = function(Vue, config = {}) {
   Vue.component("bl"+Popup.name, Popup);
   Vue.component("bl"+Picker.name, Picker);
   Vue.component("bl"+Switch.name, Switch);
+  Vue.component("bl"+Slide.name, Slide);
 };
 
 // auto install
@@ -55,5 +57,6 @@ export {
   Toast,
   Popup,
   Picker,
-  Switch
+  Switch,
+  Slide
 };

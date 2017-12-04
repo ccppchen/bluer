@@ -9,5 +9,6 @@
   "toast": "./packages/toast/index.js",
   "popup": "./packages/popup/index.js",
   "picker": "./packages/picker/index.js",
-  "switch": "./packages/switch/index.js"
+  "switch": "./packages/switch/index.js",
+  "slide":"./packages/slide/index.js"
 }
