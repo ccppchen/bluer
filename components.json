@@ -7,6 +7,8 @@
   "datetime-picker": "./packages/datetime-picker/index.js",
   "modal": "./packages/modal/index.js",
   "toast": "./packages/toast/index.js",
+  "navbar": "./packages/navbar/index.js",
+  "tab-item": "./packages/tab-item/index.js",
   "popup": "./packages/popup/index.js",
   "picker": "./packages/picker/index.js",
   "switch": "./packages/switch/index.js"
