@@ -28,8 +28,9 @@
   }
 </style>
 
-<script type="text/babel">
+<script>
   export default {
+    name: "actionsheetDemo",
     data() {
       return {
         sheetVisible: false,

@@ -22,7 +22,7 @@
 import address from 'src/lib/json/allCityAreas.json'
 export default {
 
-  name: 'addressPicker',
+  name: 'AddressPicker',
 
   props: {
     cancelText: {

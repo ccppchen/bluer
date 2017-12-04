@@ -128,7 +128,7 @@
     }
     .bar-right {
       .button {
-        font-size: rem(28);
+        font-size: rem(38);
       }
       .j-nav {
         width: rem(80);
@@ -225,7 +225,7 @@
   }
 </style>
 
-<script lang="babel">
+<script>
 
   export default {
     name: 'Bar',

@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: 'page-switch',
+  name: 'switchDemo',
 
   data() {
     return {

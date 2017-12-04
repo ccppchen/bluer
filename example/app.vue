@@ -22,6 +22,9 @@
   .bl-button{
     margin-bottom: rem(20) !important
   }
+  .page-button{
+    padding: 0 rem(20);
+  }
 </style>
 
 <script type="text/babel">

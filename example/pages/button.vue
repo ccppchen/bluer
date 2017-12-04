@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'button',
+  name: 'buttonDemo',
   methods: {
     clickFn() {
       alert('被点击了')

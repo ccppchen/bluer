@@ -39,6 +39,7 @@
   "dependencies": {
     "array-find-index": "^1.0.2",
     "raf.js": "0.0.4",
+    "scroll": "^2.0.1",
     "vue-lazyload": "^1.0.1",
     "vue-popup": "^0.2.14"
   },

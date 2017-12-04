@@ -11,6 +11,26 @@
         "path": "/popup",
         "name": "popup",
         "icon": "popup"
+      },
+      {
+        "path": "/address-picker",
+        "name": "address-picker",
+        "icon": "address-picker"
+      },
+      {
+        "path": "/datetime-picker",
+        "name": "datetime-picker",
+        "icon": "datetime-picker"
+      },
+      {
+        "path": "/modal",
+        "name": "modal",
+        "icon": "modal"
+      },
+      {
+        "path": "/toast",
+        "name": "toast",
+        "icon": "toast"
       }
     ]
   },
@@ -26,6 +46,11 @@
         "path": "/button",
         "name": "Button",
         "icon": "button"
+      },
+      {
+        "path": "/bar",
+        "name": "bar",
+        "icon": "bar"
       }
     ]
   },

@@ -99,7 +99,7 @@
   }
 </style>
 
-<script type="text/babel">
+<script>
   export default {
     data() {
       return {
@@ -114,10 +114,6 @@
             values: ['2016-01', '2016-02', '2016-03', '2016-04', '2016-05', '2016-06'],
             className: 'slot1',
             textAlign: 'right'
-          }, {
-            divider: true,
-            content: '-',
-            className: 'slot2'
           }, {
             flex: 1,
             values: ['2016-01', '2016-02', '2016-03', '2016-04', '2016-05', '2016-06'],

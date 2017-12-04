@@ -8,10 +8,21 @@ var OUTPUT_PATH = path.join(__dirname, '../../src/index.js');
 var IMPORT_TEMPLATE = 'import {{name}} from \'../packages/{{package}}\';';
 var ISNTALL_COMPONENT_TEMPLATE = '  Vue.component("bl"+{{name}}.name, {{name}});';
 var MAIN_TEMPLATE = `{{include}}
+import directive from './directive';
+import ModalJs from '../packages/modal/modal.js';
+import Toast from '../packages/toast/toast.js';
 
 const version = '{{version}}';
 const install = function(Vue, config = {}) {
   if (install.installed) return;
+
+  // 指令 注册
+  Object.keys(directive).forEach((key) => {
+    Vue.directive(key, directive[key])
+  })
+
+  Vue.$toast = Vue.prototype.$toast = Toast;
+  Vue.$modal = Vue.prototype.$modal = ModalJs;
 
 {{install}}
 };

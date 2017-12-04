@@ -1,7 +1,12 @@
 {
   "actionsheet": "./packages/actionsheet/index.js",
-  "cell": "./packages/cell/index.js",
+  "address-picker": "./packages/address-picker/index.js",
+  "bar": "./packages/bar/index.js",
   "button": "./packages/button/index.js",
+  "cell": "./packages/cell/index.js",
+  "datetime-picker": "./packages/datetime-picker/index.js",
+  "modal": "./packages/modal/index.js",
+  "toast": "./packages/toast/index.js",
   "popup": "./packages/popup/index.js",
   "picker": "./packages/picker/index.js",
   "switch": "./packages/switch/index.js"
