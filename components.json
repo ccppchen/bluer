@@ -8,7 +8,10 @@
   "modal": "./packages/modal/index.js",
   "toast": "./packages/toast/index.js",
   "navbar": "./packages/navbar/index.js",
+  "select-picker": "./packages/select-picker/index.js",
   "tab-item": "./packages/tab-item/index.js",
+  "tab-container": "./packages/tab-container/index.js",
+  "tab-container-item": "./packages/tab-container-item/index.js",
   "popup": "./packages/popup/index.js",
   "picker": "./packages/picker/index.js",
   "switch": "./packages/switch/index.js"

@@ -6,6 +6,11 @@ import Cell from '../packages/cell';
 import DatetimePicker from '../packages/datetime-picker';
 import Modal from '../packages/modal';
 import Toast from '../packages/toast';
+import Navbar from '../packages/navbar';
+import SelectPicker from '../packages/select-picker';
+import TabItem from '../packages/tab-item';
+import TabContainer from '../packages/tab-container';
+import TabContainerItem from '../packages/tab-container-item';
 import Popup from '../packages/popup';
 import Picker from '../packages/picker';
 import Switch from '../packages/switch';
@@ -32,6 +37,11 @@ const install = function(Vue, config = {}) {
   Vue.component("bl"+Cell.name, Cell);
   Vue.component("bl"+DatetimePicker.name, DatetimePicker);
   Vue.component("bl"+Modal.name, Modal);
+  Vue.component("bl"+Navbar.name, Navbar);
+  Vue.component("bl"+SelectPicker.name, SelectPicker);
+  Vue.component("bl"+TabItem.name, TabItem);
+  Vue.component("bl"+TabContainer.name, TabContainer);
+  Vue.component("bl"+TabContainerItem.name, TabContainerItem);
   Vue.component("bl"+Popup.name, Popup);
   Vue.component("bl"+Picker.name, Picker);
   Vue.component("bl"+Switch.name, Switch);
@@ -53,6 +63,11 @@ export {
   DatetimePicker,
   Modal,
   Toast,
+  Navbar,
+  SelectPicker,
+  TabItem,
+  TabContainer,
+  TabContainerItem,
   Popup,
   Picker,
   Switch
