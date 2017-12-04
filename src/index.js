@@ -5,12 +5,13 @@ import Button from '../packages/button';
 import Cell from '../packages/cell';
 import DatetimePicker from '../packages/datetime-picker';
 import Modal from '../packages/modal';
+import Toast from '../packages/toast';
 import Popup from '../packages/popup';
 import Picker from '../packages/picker';
 import Switch from '../packages/switch';
 import directive from './directive';
 import ModalJs from '../packages/modal/modal.js';
-import Toast from '../packages/toast/index.js';
+import Toast from '../packages/toast/toast.js';
 
 const version = '2.2.9';
 const install = function(Vue, config = {}) {
@@ -41,7 +42,7 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 };
 
-module.exports = {
+export {
   install,
   version,
   Actionsheet,
@@ -51,6 +52,7 @@ module.exports = {
   Cell,
   DatetimePicker,
   Modal,
+  Toast,
   Popup,
   Picker,
   Switch

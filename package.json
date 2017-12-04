@@ -47,6 +47,9 @@
     "vue": "2.1.10"
   },
   "devDependencies": {
+    "babel-core": "6.22.1",
+    "babel-loader": "6.2.10",
+    "babel-plugin-transform-runtime": "6.22.0",
     "cooking": "^1.2.4",
     "cooking-buble": "^0.1.2",
     "cooking-lint": "^0.1.2",
@@ -54,7 +57,8 @@
     "cooking-vue2": "^0.2.2",
     "css-loader": "^0.25.0",
     "eslint": "^3.12.2",
-    "extract-text-webpack-plugin": "beta",
+    "eslint-loader": "^1.9.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
     "fastclick": "^1.0.6",
     "file-loader": "^0.9.0",
     "gh-pages": "^0.11.0",
@@ -77,8 +81,8 @@
     "vue-router": "^2.0.0",
     "vue-template-compiler": "2.1.10",
     "vue-template-es2015-compiler": "^1.4.2",
-    "webpack": "beta",
-    "webpack-dev-server": "beta",
+    "webpack": "^2.2.0-rc.3",
+    "webpack-dev-server": "^2.2.0-rc.0",
     "webpack-shell-plugin": "^0.4.3"
   }
 }
