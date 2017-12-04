@@ -56,6 +56,11 @@
         "path": "/bar",
         "name": "bar",
         "icon": "bar"
+      },
+      {
+        "path": "/navbar",
+        "name": "navbar",
+        "icon": "navbar"
       }
     ]
   },
