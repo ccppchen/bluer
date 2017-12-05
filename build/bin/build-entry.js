@@ -17,6 +17,11 @@ const version = '{{version}}';
 const install = function(Vue, config = {}) {
   if (install.installed) return;
 
+  // bl-address-picker
+  Vue.component('blAddressPicker', resolve => {
+    require(['../packages/address-picker'], resolve)
+  });
+
   // 指令 注册
   Object.keys(directive).forEach((key) => {
     Vue.directive(key, directive[key])

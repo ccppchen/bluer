@@ -1,10 +1,10 @@
 <template>
   <div class="swiper-container" ref="slide" v-show="slides.length >= 1">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" v-if="slides.length > 1" v-for="item in slides">
+      <div class="swiper-slide" v-if="slides.length > 1" v-for="item in slides" v-go-native-resource="item">
         <a href="javascript:;"><img :_src="item.mediaUrl.replace(/^http:/, '')" :alt="item.deployName"></a>
       </div>
-      <div class="swiper-slide" v-else>
+      <div class="swiper-slide" v-else v-go-native-resource="item">
         <a href="javascript:;"><img :src="item.mediaUrl.replace(/^http:/, '')" :alt="item.deployName"></a>
       </div>
     </div>

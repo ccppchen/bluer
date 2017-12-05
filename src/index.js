@@ -1,5 +1,4 @@
 import Actionsheet from '../packages/actionsheet';
-import AddressPicker from '../packages/address-picker';
 import Bar from '../packages/bar';
 import Button from '../packages/button';
 import Cell from '../packages/cell';
@@ -27,6 +26,11 @@ const version = '2.2.9';
 const install = function(Vue, config = {}) {
   if (install.installed) return;
 
+  // bl-address-picker
+  Vue.component('blAddressPicker', resolve => {
+    require(['../packages/address-picker'], resolve)
+  });
+
   // 指令 注册
   Object.keys(directive).forEach((key) => {
     Vue.directive(key, directive[key])
@@ -37,7 +41,6 @@ const install = function(Vue, config = {}) {
   Vue.use(infiniteScroll);
 
   Vue.component("bl"+Actionsheet.name, Actionsheet);
-  Vue.component("bl"+AddressPicker.name, AddressPicker);
   Vue.component("bl"+Bar.name, Bar);
   Vue.component("bl"+Button.name, Button);
   Vue.component("bl"+Cell.name, Cell);
@@ -66,7 +69,6 @@ export {
   install,
   version,
   Actionsheet,
-  AddressPicker,
   Bar,
   Button,
   Cell,
