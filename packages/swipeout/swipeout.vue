@@ -39,6 +39,7 @@
   font-size: 14px;
   color: #fff;
   border: none;
+  border-radius: 0;
 }
 .vux-swipeout-content {
   position: relative;

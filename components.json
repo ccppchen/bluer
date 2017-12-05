@@ -15,5 +15,8 @@
   "popup": "./packages/popup/index.js",
   "picker": "./packages/picker/index.js",
   "switch": "./packages/switch/index.js",
+  "swipeout": "./packages/swipeout/index.js",
+  "swipeout-item": "./packages/swipeout-item/index.js",
+  "swipeout-button": "./packages/swipeout-button/index.js",
   "slide":"./packages/slide/index.js"
 }

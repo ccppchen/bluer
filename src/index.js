@@ -14,10 +14,14 @@ import TabContainerItem from '../packages/tab-container-item';
 import Popup from '../packages/popup';
 import Picker from '../packages/picker';
 import Switch from '../packages/switch';
+import Swipeout from '../packages/swipeout';
+import SwipeoutItem from '../packages/swipeout-item';
+import SwipeoutButton from '../packages/swipeout-button';
 import Slide from '../packages/slide';
 import directive from './directive';
 import ModalJs from '../packages/modal/modal.js';
 import Toast from '../packages/toast/toast.js';
+import infiniteScroll from '../packages/infinite-scroll/index.js';
 
 const version = '2.2.9';
 const install = function(Vue, config = {}) {
@@ -30,6 +34,7 @@ const install = function(Vue, config = {}) {
 
   Vue.$toast = Vue.prototype.$toast = Toast;
   Vue.$modal = Vue.prototype.$modal = ModalJs;
+  Vue.use(infiniteScroll);
 
   Vue.component("bl"+Actionsheet.name, Actionsheet);
   Vue.component("bl"+AddressPicker.name, AddressPicker);
@@ -46,6 +51,9 @@ const install = function(Vue, config = {}) {
   Vue.component("bl"+Popup.name, Popup);
   Vue.component("bl"+Picker.name, Picker);
   Vue.component("bl"+Switch.name, Switch);
+  Vue.component("bl"+Swipeout.name, Swipeout);
+  Vue.component("bl"+SwipeoutItem.name, SwipeoutItem);
+  Vue.component("bl"+SwipeoutButton.name, SwipeoutButton);
   Vue.component("bl"+Slide.name, Slide);
 };
 
@@ -73,5 +81,8 @@ export {
   Popup,
   Picker,
   Switch,
+  Swipeout,
+  SwipeoutItem,
+  SwipeoutButton,
   Slide
 };

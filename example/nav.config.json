@@ -36,6 +36,21 @@
         "path": "/slide",
         "name": "slide",
         "icon": "slide"
+      },
+      {
+        "path": "/infinite-scroll",
+        "name": "infinite-scroll",
+        "icon": "infinite-scroll"
+      },
+      {
+        "path": "/select-picker",
+        "name": "select-picker",
+        "icon": "select-picker"
+      },
+      {
+        "path": "/swipeout",
+        "name": "swipeout",
+        "icon": "swipeout"
       }
     ]
   },

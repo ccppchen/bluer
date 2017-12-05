@@ -53,8 +53,9 @@ export default {
       let width = 0
       list.forEach(one => {
         // console.log($(one.elm).width())
+        console.log(one.elm.offsetWidth)
         // const propsData = one.componentOptions ? one.componentOptions.propsData : {}
-        width += $(one.elm).width() || 80
+        width += one.elm.offsetWidth || 80
       })
       this[`${direction}MenuWidth`] = width
     },

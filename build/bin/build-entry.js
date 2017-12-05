@@ -11,6 +11,7 @@ var MAIN_TEMPLATE = `{{include}}
 import directive from './directive';
 import ModalJs from '../packages/modal/modal.js';
 import Toast from '../packages/toast/toast.js';
+import infiniteScroll from '../packages/infinite-scroll/index.js';
 
 const version = '{{version}}';
 const install = function(Vue, config = {}) {
@@ -23,6 +24,7 @@ const install = function(Vue, config = {}) {
 
   Vue.$toast = Vue.prototype.$toast = Toast;
   Vue.$modal = Vue.prototype.$modal = ModalJs;
+  Vue.use(infiniteScroll);
 
 {{install}}
 };
