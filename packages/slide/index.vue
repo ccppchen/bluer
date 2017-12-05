@@ -4,7 +4,7 @@
       <div class="swiper-slide" v-if="slides.length > 1" v-for="item in slides">
         <a href="javascript:;"><img :_src="item.mediaUrl.replace(/^http:/, '')" :alt="item.deployName"></a>
       </div>
-      <div class="swiper-slide" v-else v-go-native-resource="item">
+      <div class="swiper-slide" v-else>
         <a href="javascript:;"><img :src="item.mediaUrl.replace(/^http:/, '')" :alt="item.deployName"></a>
       </div>
     </div>
@@ -59,8 +59,8 @@ export default {
           let TouchSlide = require('./TouchSlide').default;
           TouchSlide({
             slideCell: this.$refs.slide,
-            titCell: this.pagination ? ".swiper-pagination ul" : false,
-            mainCell: ".swiper-wrapper",
+            titCell: this.pagination ? this.$refs.slide.getElementsByClassName('swiper-pagination')[0].getElementsByTagName('ul') : false,
+            mainCell: this.$refs.slide.getElementsByClassName('swiper-wrapper'),
             effect: this.effect,
             autoPlay: this.autoPlay,
             delayTime: 400,

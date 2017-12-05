@@ -38,6 +38,7 @@ export default function(a){
   var slideCell = opts.slideCell;
   //简单模拟jquery选择器
   var obj = function(str,parEle){
+    if (typeof str === 'object') return str;
     return document.querySelectorAll(str)
   }
   // 获取样色数值
@@ -126,6 +127,7 @@ export default function(a){
   var doSwitchLoad=function( moving ){
         var curIndex = ( effect=="leftLoop"?index+1:index ) + moving;
         var changeImg = function( ind ){
+            if (!conBox.children[ind]) return;
             var img = conBox.children[ind].getElementsByTagName("img");
             for ( var i=0; i<img.length ; i++ )
             {
@@ -264,7 +266,7 @@ export default function(a){
   }
 
   //点击事件
-  if( navObj ){
+  if( navObj && navObj.length ){
     for ( var i=0; i<navObjSize; i++ )
     {
       (function(){
