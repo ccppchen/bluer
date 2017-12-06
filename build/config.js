@@ -30,5 +30,5 @@ exports.alias = {
 
 exports.jsexclude = /node_modules|lib/;
 
-exports.extends = ['vue2', 'saladcss', 'buble'];
+exports.extends = ['vue2', 'sass', 'saladcss', 'buble'];
 

@@ -5,8 +5,7 @@
   "keywords": [
     "component",
     "vue",
-    "mobile",
-    "eleme"
+    "mobile"
   ],
   "main": "lib/bluer.common.js",
   "style": "lib/style.css",
@@ -26,7 +25,11 @@
     "clean": "rimraf lib && rimraf packages/*/lib",
     "lint": "eslint src/**/*.js packages/**/*.{js,vue} build/**/*.js --quiet"
   },
-  "author": "elemefe",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccppchen/bluer.git"
+  },
+  "author": "chenpeng",
   "license": "MIT",
   "dependencies": {
     "array-find-index": "^1.0.2",
@@ -46,6 +49,7 @@
     "cooking-buble": "^0.1.2",
     "cooking-lint": "^0.1.2",
     "cooking-saladcss": "^0.4.0",
+    "cooking-sass": "^1.0.0",
     "cooking-vue2": "^0.2.2",
     "css-loader": "^0.25.0",
     "eslint": "^3.12.2",

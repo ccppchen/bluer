@@ -9,7 +9,7 @@ cooking.set({
   format: 'umd',
   moduleName: 'BLUER',
   extractCSS: 'style.min.css',
-  extends: ['vue2', 'saladcss', 'buble'],
+  extends: ['vue2', 'sass', 'saladcss', 'buble'],
   alias: config.alias,
   externals: { vue: config.externals.vue }
 });

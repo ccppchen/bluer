@@ -21,6 +21,7 @@ import directive from './directive';
 import ModalJs from '../packages/modal/modal.js';
 import Toast from '../packages/toast/toast.js';
 import infiniteScroll from '../packages/infinite-scroll/index.js';
+import './sass/comm.scss';
 
 const version = '2.2.9';
 const install = function(Vue, config = {}) {

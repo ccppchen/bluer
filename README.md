@@ -13,19 +13,19 @@ Import all components.
 
 ```javascript
 import Vue from 'vue';
-import Mint from 'bluer';
+import Bluer from 'bluer';
 import 'bluer/lib/style.css';
 
-Vue.use(Mint);
+Vue.use(Bluer);
 ```
 
 Or import specified component. (Use [babel-plugin-component](https://www.npmjs.com/package/babel-plugin-component))
 
 ```javascript
-import { Cell, Checklist } from 'bluer';
+import { Cell, Bar } from 'bluer';
 
 Vue.component(Cell.name, Cell);
-Vue.component(Checklist.name, Checklist);
+Vue.component(Bar.name, Bar);
 ```
 
 
@@ -33,37 +33,17 @@ Equals to
 
 ```javascript
 import Vue from 'vue';
-import Mint from 'bluer';
+import Bluer from 'bluer';
 import 'bluer/lib/style.css';
 
-Vue.use(Mint);
+Vue.use(Bluer);
 
 // import specified component
 
-import MtRadio from 'bluer/lib/radio';
-import 'bluer/lib/radio/style.css';
+import Cell from 'bluer/lib/cell';
+import 'bluer/lib/cell/style.css';
 
-Vue.component(MtRadio.name, MtRadio);
-```
-
-## babel-plugin-component
-- Auto import css file
-- Modular import component
-
-Installation
-```shell
-npm i babel-plugin-component -D
-```
-
-Usage
-
-.babelrc
-```json
-{
-  "plugins": ["other-plugin", ["component", [
-    { "libraryName": "bluer", "style": true }
-  ]]]
-}
+Vue.component(Cell.name, Cell);
 ```
 
 ## Development
@@ -71,9 +51,5 @@ Usage
 ```shell
 npm run dev
 ```
-
-## Contribution
-Please make sure to read the [Contributing Guide](https://github.com/ElemeFE/bluer/blob/master/.github/CONTRIBUTING_en-us.md) before making a pull request.
-
 ## License
 MIT

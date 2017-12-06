@@ -10,7 +10,7 @@ cooking.set({
   minimize: false,
   moduleName: 'MINT',
   extractCSS: 'style.css',
-  extends: ['vue2', 'saladcss', 'buble'],
+  extends: ['vue2', 'sass', 'saladcss', 'buble'],
   alias: config.alias,
   externals: config.pkg
 });

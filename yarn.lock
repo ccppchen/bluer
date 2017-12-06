@@ -1051,6 +1051,13 @@ cooking-saladcss@^0.4.0:
     postcss-loader "^0.9.1"
     postcss-salad "^1.0.0"
 
+cooking-sass@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/cooking-sass/-/cooking-sass-1.0.0.tgz#04b9367a301aa6b6daa60dbe2b90f1e19a226d0c"
+  dependencies:
+    node-sass "*"
+    sass-loader "*"
+
 cooking-vue2@^0.2.2:
   version "0.2.3"
   resolved "http://registry.npm.taobao.org/cooking-vue2/download/cooking-vue2-0.2.3.tgz#3523d01b8341caa8e2a2f348ce100b5e3f1f7b79"
@@ -3756,7 +3763,7 @@ node-pre-gyp@^0.6.39:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-node-sass@^4.7.2:
+node-sass@*, node-sass@^4.7.2:
   version "4.7.2"
   resolved "http://registry.npm.taobao.org/node-sass/download/node-sass-4.7.2.tgz#9366778ba1469eb01438a9e8592f4262bcb6794e"
   dependencies:
@@ -5353,7 +5360,7 @@ sass-graph@^2.2.4:
     scss-tokenizer "^0.2.3"
     yargs "^7.0.0"
 
-sass-loader@^6.0.6:
+sass-loader@*, sass-loader@^6.0.6:
   version "6.0.6"
   resolved "http://registry.npm.taobao.org/sass-loader/download/sass-loader-6.0.6.tgz#e9d5e6c1f155faa32a4b26d7a9b7107c225e40f9"
   dependencies:
