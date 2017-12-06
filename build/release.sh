@@ -17,7 +17,7 @@ then
   npm version $VERSION --message "[release] $VERSION"
 
   # publish
-  git push eleme refs/tags/v$VERSION
-  git push eleme master
+  git push refs/tags/v$VERSION
+  git push master
   npm publish
 fi
